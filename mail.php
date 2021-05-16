@@ -27,7 +27,7 @@ $BODY_ALT = "Thanks for showing interest in ACM SIT Student Chapter We'll get ba
 
 if (isset($_GET['name']) && isset($_GET['email'])) {
     try {
-        $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+        //$mail->SMTPDebug = SMTP::DEBUG_SERVER;
         $mail->isSMTP();
         $mail->Host       = $HOST;
         $mail->SMTPAuth   = true;
